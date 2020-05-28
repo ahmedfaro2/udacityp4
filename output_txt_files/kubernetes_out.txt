@@ -1,0 +1,16 @@
+./run_kubernetes.sh 
+pod/flaskskapp created
+NAME                          READY   STATUS              RESTARTS   AGE
+flaskskapp                    0/1     ContainerCreating   0          1s
+flaskskapp-6bf4ffdd46-zs4qx   0/1     ContainerCreating   0          74s
+error: unable to forward port because pod is not running. Current status=Pending
+
+
+Farouk@DESKTOP-PSGURA2 MINGW64 ~/Desktop/project-ml-microservice-kubernetes/project-ml-microservice-kubernetes
+$ ./run_kubernetes.sh 
+Error from server (AlreadyExists): pods "flaskskapp" already exists
+NAME                          READY   STATUS    RESTARTS   AGE
+flaskskapp                    1/1     Running   0          6m29s
+flaskskapp-6bf4ffdd46-zs4qx   1/1     Running   0          7m42s
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
